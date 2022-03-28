@@ -1,14 +1,12 @@
-
-
 const firebaseConfig = {
-    apiKey: "AIzaSyDRVHIwiU7bTxV1g61-GfbZ3C0PxKJH1tY",
-    authDomain: "safari-adventures.firebaseapp.com",
-    projectId: "safari-adventures",
-    storageBucket: "safari-adventures.appspot.com",
-    messagingSenderId: "133316262087",
-    appId: "1:133316262087:web:0fbed12f185ad0a0f0a6e2",
-    measurementId: "G-HLCB0YJRMK"
-};
+    apiKey: "AIzaSyAw8jQFW7bgktAcIVwmhmuioVp8ieqD6t0",
+    authDomain: "fir-testing-53f60.firebaseapp.com",
+    projectId: "fir-testing-53f60",
+    storageBucket: "fir-testing-53f60.appspot.com",
+    messagingSenderId: "413209988655",
+    appId: "1:413209988655:web:225b7fe6e9b3293b1d80da"
+  };
+  
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -33,6 +31,31 @@ function agentCreation() {
         });
 
 }
+
+function agentLogin() {
+    var agentForm = document.getElementById("agentSigninForm").elements;
+    const agentEmail = agentForm.item(0).value;
+    const agentPassword = agentForm.item(1).value;
+
+
+    firebase.auth().signInWithEmailAndPassword(agentEmail, agentPassword)
+        .then((userCredential) => {
+            // Signed in 
+            var user = userCredential.user;
+            saveAgentToDb();
+
+            alert('agent login Successfully');
+
+        })
+        .catch((error) => {
+            alert(error);
+        });
+
+}
+
+// function logout(){
+//     firebase.auth().signOut() 
+// }
 
 function saveAgentToDb() {
     var db = firebase.firestore();
