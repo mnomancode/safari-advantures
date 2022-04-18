@@ -30,6 +30,10 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
 
+  
+  <h1 id="userId"></h1>
+
+
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
     Agent Rsgiseration
@@ -39,9 +43,7 @@
     Agent Login
   </button>
 
-  <!-- <button type="button" class="btn btn-danger" onclick="logout()">
-    Agent Logout
-  </button> -->
+  
   <!-- Modal Signup-->
   <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -76,7 +78,6 @@
   </div>
 
   <!-- Modal Signin -->
-
   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -108,6 +109,8 @@
       </div>
     </div>
   </div>
+
+  <button onclick="logout()">Logout</button>
 
   <script src="./index.js"></script>
 </body>

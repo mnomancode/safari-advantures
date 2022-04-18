@@ -23,7 +23,8 @@ function agentCreation() {
         .then((userCredential) => {
             // Signed in 
             var user = userCredential.user;
-            saveAgentToDb();
+            updateUserID();
+            // saveAgentToDb();
 
             alert('agent Creation Success full');
 
@@ -44,7 +45,9 @@ function agentLogin() {
         .then((userCredential) => {
             // Signed in 
             var user = userCredential.user;
-            saveAgentToDb();
+            // saveAgentToDb();
+            updateUserID();
+
 
             alert('agent login Successfully');
 
@@ -55,9 +58,27 @@ function agentLogin() {
 
 }
 
-// function logout(){
-//     firebase.auth().signOut() 
-// }
+function logout(){
+firebase.auth().signOut().then(() => {
+    alert('Logout Sucessfull');
+    // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+    alert('Logout NOt Sucessfull');
+
+  });
+}
+
+function updateUserID(){
+    document.getElementById("userId").innerHTML=firebase.auth().currentUser.uid;
+
+
+
+};
+
+
+
+
 
 function saveAgentToDb() {
     var db = firebase.firestore();
@@ -79,3 +100,4 @@ function saveAgentToDb() {
 
 
 }
+
