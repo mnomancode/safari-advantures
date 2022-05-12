@@ -43,6 +43,7 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 .flexslider .slides > li {
   display: none;
@@ -259,6 +260,10 @@ html[xmlns] .flexslider .slides {
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
+}
+.menu-1{
+  position: relative;
+    bottom: 10px;
 }
 /* ====================================================================================================================
  * RESPONSIVE

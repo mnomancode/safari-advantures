@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6, figure {
 					bottom: 0;
 					left: 0;
 					right: 0;
-					background: rgba($brand-black,.3);
+					background: rgba($brand-back,.3);
 				}
 			}
 		}
@@ -1719,7 +1719,7 @@ input[type="text"] {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba($brand-black,.7);
+		// background: rgba($brand-black,.7);
 		font-weight: 700;
 	}
 	.colorlib-heading{
