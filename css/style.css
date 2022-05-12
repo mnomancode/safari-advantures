@@ -135,7 +135,7 @@ figure {
 .colorlib-nav #colorlib-logo a {
   position: absolute;
   bottom: -20px;
-  color: #fff;
+  color: rgb(12, 12, 12);
 }
 
 @media screen and (max-width: 768px) {
@@ -392,7 +392,6 @@ figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 #colorlib-hero .flexslider .flex-control-nav {
@@ -1197,7 +1196,7 @@ figure {
   left: 0;
   right: 0;
   content: '';
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(230, 33, 33, 0.7);
   z-index: -1;
 }
 

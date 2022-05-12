@@ -262,8 +262,17 @@ html[xmlns] .flexslider .slides {
   cursor: default;
 }
 .menu-1{
+ 
   position: relative;
     bottom: 10px;
+    
+}
+.menu-1 ul li {
+  list-style: none;
+}
+
+.menu-1 ul li a {
+  color: black!important;
 }
 /* ====================================================================================================================
  * RESPONSIVE
