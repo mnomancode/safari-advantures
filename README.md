@@ -17,7 +17,7 @@ brew install node
 2. ##### Clone the repo:
 
 ```
-git clone https://github.com/usama47/Safari_Adventure
+git clone https://github.com/noman9k/safari-advantures.git
 ```
 
 3. ##### Open the project folder:
